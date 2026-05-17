@@ -1,1 +1,37 @@
-# my-profile-
+# my-profile-<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">title>テスト</title>
+  </head>
+  <body>
+    <h1>テスト</h1>
+  </body>
+</html>
+start index.html
+
+<!DOCTYPE html>
+
+< lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト</title>
+  </head>
+  <body>
+    <h1>テスト</h1>
+  </body>
+
+  <!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト</title>
+  </head>
+  <body>
+    <h1>テスト</h1>
+  </body>
+</html>
