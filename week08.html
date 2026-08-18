@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>チームメンバー一覧</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100 p-8">
+    <h1 class="text-2xl font-bold mb-6">チームメンバー</h1>
+    <div id="memberList" class="grid gap-4"></div>
+
+    <script>
+      const members = [
+        { name: "坂本太郎👓", role: "ORDER", comment: "史上最強の男" },
+        { name: "朝倉シン👊", role: "元殺し屋", comment: "人の心が読めるエスパー" },
+        { name: "陸 少糖🗡️", role: "元マフィア", comment:"陸家のお嬢様" },
+        { name: "眞霜平助🔫" , role: "凄腕の変則スナイパー",comment:"人をすぐ信用する"},
+        { name:  "南雲🌨" ,role:"ORDERの一員で、坂本の殺し屋時代の同期" ,comment: "変装の達人で、戦闘能力も高い"},
+
+      ];
+
+      const memberList = document.getElementById("memberList");
+
+      members.forEach((member) => {
+        // カード要素を作る
+        const card = document.createElement("div");
+        card.className ="bg-green-200 rounded-lg shadow p-4";
+
+        // カードの中身を設定する
+        card.innerHTML = `
+          <h2 class="text-lg font-bold text-center">${member.name}</h2>
+          <p class="text-yellow-600 text-sm text-center">${member.role}</p>
+          <p class="text-gray-600 mt-2 text-center">${member.comment}</p>
+        `;
+
+        // リストに追加する
+        memberList.appendChild(card);
+      });
+    </script>
+  </body>
+</html>
